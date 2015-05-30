@@ -19,3 +19,128 @@ body {
   background-color: $base-background-color;
   color: $base-font-color;
 }
+
+.header {
+  background-color: #F5F5F5;
+  height: 50px;
+  max-width: 100%;
+}
+
+.containerAll {
+  max-width: 985px;
+  margin: 20px auto;
+}
+
+.userContainer {
+  @include span-columns(3);
+  
+  .avatarCon {
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 15px;
+  }
+  
+  img {
+    border-radius: 5px;
+    height: 230px;
+    width: 230px;
+  }
+  
+  .fullName {
+    margin: 0em;
+    font-style: bold;
+  }
+  
+  .loginName {
+    color: #666666;
+    margin: 0em;
+  }
+  
+  i{
+    color: #CCCCCC;
+  }
+  
+  .pubDatCon {
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 10px;
+  }
+  
+  .socialInfo {
+    padding-top: 5px;
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 10px;
+    
+    .socialStat {
+      margin-top: 10px;
+      margin-right: 15px;
+      margin-left: 10px;
+      display: inline-block; 
+      text-align: center;
+      font-size: 12px;
+      
+      a {
+        text-decoration: none;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.org a img {
+   width: 45px;
+   height: 45px;
+}
+
+
+.repoContainer {
+  @include span-columns(9);
+}
+
+.repos {
+  list-style: none;
+  
+  .repoTitle {
+    display: inline-block;
+  }
+  
+  .repoStats {
+    float: right;
+    margin-top: 20px;
+    display: inline-block;
+
+    span {
+      color: #888888;
+      font-size: 12px;
+      margin-left: 5px;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #888888;
+      font-size: 12px;
+    }
+  }
+  
+  li h2 a {
+    text-decoration: none;
+    color: #4183C4;
+  }
+  
+  li h2 {
+    margin-bottom: 0px;
+  }
+  
+  li h4 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: #666666;
+  }
+  
+  li h5 {
+    color: #888888;
+  }
+  
+  .repo {
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 10px;
+  }
+}

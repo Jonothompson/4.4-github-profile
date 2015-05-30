@@ -1,2 +1,18 @@
-
-#each this
+<section class="repoContainer">
+<ul class="repos">
+{{#each this}}
+	<li class="repo">
+		<div class="repoTitle">
+			<h2><a href="{{html_url}}">{{name}}</a></h2>
+			<h4>{{description}}</h4>
+			<h5>{{updated_at}}</h5>
+		</div>
+		<div class="repoStats">
+			<span>{{language}}</span>
+			<span><a href="{{stargazers_url}}"><i class="fa fa-star"></i> {{stargazers_count}}</a></span>
+			<span><a href="{{forks_url}}"><i class="fa fa-code-fork"></i> {{forks_count}}</a></span>
+		</div>
+	</li>
+{{/each}}
+</ul>
+</section>

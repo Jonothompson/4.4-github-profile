@@ -1,4 +1,31 @@
-<h1>Hello</h1>
-<li>poo</li>
-<li>pee</li>
-<li>{{created_at}}</li>
+<!-- <button>Log In</button>-->
+
+<div class="userContainer">
+	<div class="avatarCon">
+  		<img src="{{avatar_url}}" alt="">
+		<h1 class="fullName">{{name}}</h1>
+		<h2 class="loginName">{{login}}</h2>
+	</div>
+	<div class="pubDatCon">
+		<p><i class="fa fa-clock-o"></i> {{location}}</p>
+		<p><i class="fa fa-map-marker"></i> {{created_at}}</p>
+	</div>
+	<div class="socialInfo followers">
+		<div class="socialStat">
+			<a href="{{followers_url}}">{{followers}}</a>
+			<p>Followers</p>
+		</div>
+		<div class="socialStat">
+			<a href="{{starred_url}}">0</a>
+			<p>Starred</p>
+		</div>
+		<div class="socialStat">
+			<a href="{{followering_url}}">{{following}}</a>
+			<p>Following</p>
+		</div>
+	</div>
+	<div class="org">
+		<h3>Organizations</h3>
+		<a href="{{organizations_url}}"><img src="http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png" alt="Javascript Logo"></a>
+	</div>
+</div>

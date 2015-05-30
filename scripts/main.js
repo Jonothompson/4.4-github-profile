@@ -8,15 +8,18 @@
         "Authorization": "token " + GITHUB_TOKEN
       }
     }).then(function(user) {
-      $('body').prepend(JST['user'](user));
+      $('.containerAll').prepend(JST['user'](user));
       console.log(user);
     });
   });
   
   $.ajax({
    url: "https://api.github.com/users/Jonothompson/repos",
+   headers: {
+        "Authorization": "token " + GITHUB_TOKEN
+      }
   	}).then(function(data){
-       $('body').prepend(JST['repo'](data));
+       $('.containerAll').append(JST['repo'](data.reverse()));
        console.log(data);
  });
 
