@@ -6,6 +6,15 @@ this["JST"]["application"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1
     + this.escapeExpression(((helper = (helper = helpers.created_at || (depth0 != null ? depth0.created_at : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"created_at","hash":{},"data":data}) : helper)))
     + "</li>";
 },"useData":true});
+this["JST"]["header"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+    var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
+
+  return "\n<img src=\""
+    + alias3(((helper = (helper = helpers.avatar_url || (depth0 != null ? depth0.avatar_url : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"avatar_url","hash":{},"data":data}) : helper)))
+    + "\" alt=\"avatar\" class=\"headImg\">\n<h5 class=\"headerLoginName\">"
+    + alias3(((helper = (helper = helpers.login || (depth0 != null ? depth0.login : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"login","hash":{},"data":data}) : helper)))
+    + "</h5>\n<span><i class=\"fa fa-plus\"></i></span>\n<span><i class=\"fa fa-inbox\"></i></span>\n<span><i class=\"fa fa-cog\"></i></span>\n<span><i class=\"fa fa-sign-out\"></i></span>";
+},"useData":true});
 this["JST"]["repo"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
     var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
 
@@ -31,7 +40,7 @@ this["JST"]["repo"] = Handlebars.template({"1":function(depth0,helpers,partials,
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
     var stack1;
 
-  return "<section class=\"repoContainer\">\n<ul class=\"repos\">\n"
+  return "\n<section class=\"repoContainer\">\n<div class=\"tabBar\">\n	<div class=\"contributionsTab\">\n		<h4><i class=\"fa fa-plus-square-o\"> Contributions</i></h4>\n	</div>\n	<div class=\"repositioresTab\">\n		<h4><i class=\"fa fa-book\"> Repositories</i></h4>\n	</div>\n	<div class=\"publicActivityTab\">\n		<h4><i class=\"fa fa-rss\"> Public Activity</i></h4>\n	</div>\n	<button><i class=\"fa fa-pencil\"></i> Edit Profile</button>\n</div>\n<div class=\"repoSorting\">\n	\n</div>\n<ul class=\"repos\">\n"
     + ((stack1 = helpers.each.call(depth0,depth0,{"name":"each","hash":{},"fn":this.program(1, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
     + "</ul>\n</section>";
 },"useData":true});

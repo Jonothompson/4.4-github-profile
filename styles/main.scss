@@ -24,6 +24,60 @@ body {
   background-color: #F5F5F5;
   height: 50px;
   max-width: 100%;
+  
+  button {
+    float: left;
+  }
+  
+  .fa {
+    margin-left: 135px;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+  }
+  
+  .fa-plus {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
+  .fa-inbox {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
+  .fa-cog {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
+  .fa-sign-out {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
+  form {
+    display: inline-block;
+    width: 350px;
+  }
+  
+  input {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .headImg {
+    margin-left: 100px;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  .headerLoginName {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
 }
 
 .containerAll {
@@ -90,10 +144,22 @@ body {
    height: 45px;
 }
 
-
 .repoContainer {
   @include span-columns(9);
 }
+
+ .tabBar {
+   padding-left: 40px;
+ }
+
+ .tabBar div {
+  margin-right: 10px;
+  display: inline-block;
+  }
+  
+  .contributionsTab {
+    border-bottom: 1px solid #EEEEEE;
+  }
 
 .repos {
   list-style: none;
@@ -143,4 +209,17 @@ body {
     border-bottom: 1px solid #EEEEEE;
     padding-bottom: 10px;
   }
+}
+
+.footer {
+  height: 50px;
+  max-width: 985px;
+  margin: 20px auto;
+  border-top: 1px solid #EEEEEE;
+}
+
+.headerText {
+  margin-left: 10px;
+  font-size: 13;
+  font-style: bold;
 }
