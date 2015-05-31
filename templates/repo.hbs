@@ -10,10 +10,20 @@
 	<div class="publicActivityTab">
 		<h4><i class="fa fa-rss"> Public Activity</i></h4>
 	</div>
-	<button><i class="fa fa-pencil"></i> Edit Profile</button>
+	<button class="editProfile"><i class="fa fa-pencil"></i> Edit Profile</button>
 </div>
 <div class="repoSorting">
-	
+	<input type="text" placeholder="Find a repository…" tabindex="2">
+	<input type="submit" value="Search" class="btn">
+	<ul>
+		<li class="all">All</li>
+		<li>Public</li>
+		<li>Private</li>
+		<li>Sources</li>
+		<li>Forks</li>
+		<li>Mirrors</li>
+	</ul>
+		<button class="new-repo"><i class="fa fa-book"></i> New</button>
 </div>
 <ul class="repos">
 {{#each this}}

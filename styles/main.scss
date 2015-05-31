@@ -149,7 +149,8 @@ body {
 }
 
  .tabBar {
-   padding-left: 40px;
+   margin-left: 40px;
+   border-bottom: 1px solid #EEEEEE;
  }
 
  .tabBar div {
@@ -158,8 +159,63 @@ body {
   }
   
   .contributionsTab {
-    border-bottom: 1px solid #EEEEEE;
+    padding-left: 15px;
+    padding-right: 15px;
   }
+  
+  .repositioresTab {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid white;
+    border-left: 1px solid #EEEEEE;
+  }
+  
+  .publicActivityTab {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .editProfile {
+    margin-top: 23px;
+    float: right;
+    border-radius: 5px;
+  }
+
+.repoSorting {
+   margin-left: 40px;
+   border-bottom: 1px solid #EEEEEE;
+   
+   input {
+     border-radius: 5px;
+   }
+    
+   ul {
+     display: inline-block;
+   }
+   
+   ul li {
+     display: inline-block;
+     font-size: 14px;
+     margin-right: 5px;
+     color: #4183C4;
+   }
+   
+   .all {
+     color: black;
+     font-weight: bold;
+     font-size: 15px;
+   }
+   
+   .new-repo {
+     float: right;
+     color: white;
+     margin-top: 12px;
+     background-color: #68B94C;
+     border-radius: 5px;
+   }
+}
 
 .repos {
   list-style: none;
