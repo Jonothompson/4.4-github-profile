@@ -12,8 +12,7 @@
       console.log(user);
     });
   });
-
-  $(document).ready(function(){
+  
     $.ajax({
       url: "https://api.github.com/user",
       headers: {
@@ -23,7 +22,6 @@
       $('.containerAll').prepend(JST['user'](user));
       console.log(user);
     });
-  });
   
   $.ajax({
    url: "https://api.github.com/users/Jonothompson/repos",
